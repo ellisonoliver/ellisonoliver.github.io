@@ -46,3 +46,63 @@ nav .menu a:hover {
     transition: background-color 0.3 ease-in-out, color 0.3s ease-in-out;
 }
 
+.content {
+    margin-top: 75px;
+    flex-grow: 1;
+    background: #ffffff;
+    min-height: calc(100vh - 75px - 60px);
+    box-sizing: border-box;
+}
+
+
+footer {
+    background-color:#002c2e;
+    color:darkgray;
+    padding: 1% 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    color: darkgray;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.footer-section p {
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: darkgray;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px
+}
