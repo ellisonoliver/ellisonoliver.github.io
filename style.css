@@ -46,18 +46,134 @@ nav .menu a:hover {
     transition: background-color 0.3 ease-in-out, color 0.3s ease-in-out;
 }
 
+.services-dropdown {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba (0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+    top: 100%;
+}
+
+.dropdown-content a {
+    color: #000000 !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #ffffff !important;
+    border-radius: 0px !important;
+}
+
+.services-dropdown:hover .dropdown-content {
+    display: block; 
+}
+
 .content {
-    margin-top: 75px;
+    margin-top: 82px;
+    padding: 1%;
     flex-grow: 1;
     background: #ffffff;
     min-height: calc(100vh - 75px - 60px);
     box-sizing: border-box;
 }
 
+/* ----------------------------------------------------- About Us Page --------------------------------------------------------------- */
+.section {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .heading-text {
+    margin-top: 1%;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #002c2e;
+  }
+  .hero {
+    text-align: center;
+  }
+
+  .columns {
+    margin-top: 2rem;
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    margin-bottom: 2%;
+    background: white;
+    border: 2px solid #dddddd;
+    border-radius: 12px;
+    padding: 2%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .card img {
+    width: 400px;
+    height: auto;
+  }
+  
+  #cybersecurity-card-info, #maintenance-card-info {
+    margin-left: 2%;
+    flex: 1;
+  }
+  
+  .info-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .info-btn button {
+    background-color: #57b9b1;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 150px;
+    height: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .info-btn button:hover {
+    background-color: #3d827c;
+  }
+  
+
+  .highlight {
+    background-color: #e0f8f6;
+    border-left: 6px solid #00d6b2;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+  }
+
+
+
+/* --------------------------------------------------------- Footer ------------------------------------------------------------------- */
 
 footer {
     background-color:#002c2e;
-    color:darkgray;
+    color:#FFFFFF;
     padding: 1% 0;
     width: 100%;
     box-sizing: border-box;
@@ -78,7 +194,7 @@ footer {
 }
 
 .footer-section h3 {
-    color: darkgray;
+    color: #FFFFFF;
     margin-bottom: 15px;
     font-size: 1.5rem;
 }
@@ -97,7 +213,7 @@ footer {
 }
 
 .footer-section a {
-    color: darkgray;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
