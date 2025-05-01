@@ -12,7 +12,7 @@
         <nav>
             <div class="logo">
                 <a href="home.html">
-                <img src="C:\Users\Oliver\OneDrive\Documents\IPTECH WEBSITE\iptech-logo.png" alt="IP Tec Logo">
+                <img src="Images/iptech-logo.png" alt="IP Tec Logo">
                 </a>
             </div>
                 
@@ -36,15 +36,64 @@
             </ul>
         </nav>
 
-        <div class="content">
-            <h1>Careers page</h1>
+        <div class="content" id="careers-content">
+            <div class="title-div">
+                <h1>Careers</h1>
+                <p>We're Hiring!</p>
+            </div>
+
+            <div class="careers-images">
+                <img src="Images/careers-img1.jpg">
+                <img src="Images/careers-img2.jpg">
+            </div>
+            <h2 class="careers-subheading">Available Roles</h2>
+
+            <div class="jobs-container">
+                <div class="job-card">
+                    <div class="collapsible-header job-header">
+                        <h3 class="job-title">Account Director</h3>
+                        <div class="collapse-icons">
+                            <i class="fa-solid fa-plus plus-icon"></i>
+                            <i class="fa-solid fa-minus minus-icon" style="display: none;"></i>
+                        </div>
+                    </div>
+                    <div class="collapsible-content job-description"> This role will suit a person who wants to be more than just numbers on a sales board at a reseller. It offers the chance to join a small boutique reseller in a position with a pathway to owning part of the business in as little as three years. Established in 2011 IP TEC are seeking an experienced IT Sales Account Managers to take the next step to IP TEC Account Director within our organisation. The right candidate will utilise their new business experience, selling a wide range of IT products including hardware, cyber security and cloud solutions. You must have recent IT reseller experience (within the last 1-2 years) and be currently selling to end-user clients to be considered for this role. Understanding of the IT marketplace, including product knowledge is essential. A track record of achieving at least £15k + GP per month is also required. In return, you will be rewarded with an industry-leading basic salary and commission package, share purchase scheme, alongside fantastic progression opportunities, remote and hybrid working. In as little as three years you could be co-owner.
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="collapsible-header job-header">
+                        <h3 class="job-title">Sales Support Administrator</h3>
+                        <div class="collapse-icons">
+                            <i class="fa-solid fa-plus plus-icon"></i>
+                            <i class="fa-solid fa-minus minus-icon" style="display: none;"></i>
+                        </div>
+                    </div>
+                    <div class="collapsible-content job-description">
+                        IP TEC are seeking a person to assist with small and medium order administration. Full training will be given but working knowledge of CRM, word processing and spreadsheets would be advantageous. This role may be full or part time, hours are flexible and it may be an ideal role for return to work.
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="collapsible-header job-header">
+                        <h3 class="job-title">Technical Manager/Director</h3>
+                        <div class="collapse-icons">
+                            <i class="fa-solid fa-plus plus-icon"></i>
+                            <i class="fa-solid fa-minus minus-icon" style="display: none;"></i>
+                        </div>
+                    </div>
+                    <div class="collapsible-content job-description">
+                        IP TEC are seeking a highly capable Technical Manager or Technical Director. Skills required include cloud provisioning for a variety of technologies including Microsoft services. Ability to deliver on and off site services such as installation of security platforms, server and storage hardware, Operating systems installation, Backup technologies etc.  Location - Wendover, Bucks or Work from home / hybrid working.  
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer>
             <div class="footer-content">
                 <div class="footer-section about">
                     <h3>About IP Tec</h3>
-                    <p>iPlatforms provides expert cybersecurity testing, infrastructure installations, and managed IT services across the UK. From penetration testing and wireless security to server builds, AV setups, and device lifecycle management — we keep your business secure, connected, and running smoothly </p>
+                    <p>IP Tec provides expert cybersecurity testing, infrastructure installations, and managed IT services across the UK. From penetration testing and wireless security to server builds, AV setups, and device lifecycle management — we keep your business secure, connected, and running smoothly </p>
                 </div>
                 <div class="footer-section links">
                     <h3>Quick Links</h3>
@@ -74,5 +123,30 @@
                 <p>&copy; 2025 IP TEC. All rights reserved.</p>
             </div>
         </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const jobHeaders = document.querySelectorAll('.collapsible-header.job-header');
+
+            jobHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const plusIcon = this.querySelector('.plus-icon');
+                    const minusIcon = this.querySelector('.minus-icon');
+
+                    if (content.style.display === 'none' || content.style.display === '') {
+                        content.style.display = 'block';
+                        plusIcon.style.display = 'none';
+                        minusIcon.style.display = 'inline-block';
+                    } else {
+                        content.style.display = 'none';
+                        plusIcon.style.display = 'inline-block';
+                        minusIcon.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
     </body>
 </html>
