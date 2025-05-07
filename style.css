@@ -1036,7 +1036,7 @@ h2 {
 
 
 /* ----------------------------------------------------- Contact Page --------------------------------------------------------------- */
-#contact-h1 {
+#contact-h1, #apply-h1 {
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 1em;
@@ -1126,7 +1126,7 @@ form fieldset legend {
   gap: 0.5rem;
 }
 
-#submit-form-button {
+#submit-form-button #apply-button {
     background-color: #0c2c2c;
     color: white;
     padding: 1em 2em;
@@ -1140,7 +1140,7 @@ form fieldset legend {
   cursor: pointer;
 }
 
-#submit-form-button:hover {
+#submit-form-button:hover #apply-button:hover {
   background-color: #00d6b2;
 }
 
