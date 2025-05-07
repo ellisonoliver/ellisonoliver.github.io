@@ -1134,6 +1134,10 @@ form fieldset legend {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    width: 100%;
+    border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 #submit-form-button:hover {
